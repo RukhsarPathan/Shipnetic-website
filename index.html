@@ -9,18 +9,23 @@
 </head>
 
 <body>
-    
-        <div class="header">
-            <h1 class="logo-title">
-                <i class="fa-solid fa-truck-fast"></i> SHIPNETIC
-              </h1>
-       <ul>
-            <li><a href="#Home">Home</a></li>
-            <li> <a href="index.html">Tracking</a></li>
-            <li><a href="#Contact">Contact Us</a></li>
+    <div class="header">
+        <h1 class="logo-title">
+          <i class="fa-solid fa-truck-fast"></i> SHIPNETIC
+        </h1>
+      
+        <button class="hamburger" id="hamburger-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      
+        <ul class="navigation" id="nav-menu">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="index.html">Tracking</a></li>
+          <li><a href="#Contact">Contact Us</a></li>
         </ul>
-        </div>
-    
+      </div>
+      
+
 
     <main>
         <section class="hero">
@@ -65,5 +70,14 @@
           &copy; 2024 Shipnetic. All rights reserved.
         </div>
       </footer>
+      <script>
+        const hamburger = document.getElementById('hamburger-btn');
+        const navMenu = document.getElementById('nav-menu');
+      
+        hamburger.addEventListener('click', () => {
+          navMenu.classList.toggle('show');
+        });
+      </script>
+           
 </body>
 </html>
